@@ -1,0 +1,28 @@
+<mat-dialog-content (scroll)="onScroll($event)">
+    <h1>Aus-Wintern</h1>
+    <hr>
+    <ul>
+        <li>Absperrventile: öffnen im Gegenuhrzeigersinn, schliessen im Uhrzeigersinn </li>
+        <li>Kugelhäne: öffnen richtung Leitungsrichtung, schliessen 90° zur Leitungsrichtung</li>
+    </ul>
+    <img class="instruction" src="assets/img/instruction1.jpg">
+    <h2>Vorgehen:</h2>
+    <p>
+        Klicke unter der Map auf den Google Maps Link. 
+        Hier kannst du dich zu den jeweiligen Koordinaten navigieren lassen. 
+        Sobald du angelangt bist, wechsle zurück zu dieser App und führe die jeweiligen Arbeiten aus.
+        <br><br>
+        Auf My Maps oder Google Earth findest du eine Gesamtübersicht.
+    </p>
+</mat-dialog-content>
+
+<img class="arrow" id="arrow" src="assets/icon/arrowDown.png">
+
+<mat-dialog-actions class="okBtn" align="end">
+    <button 
+        mat-raised-button 
+        (click)="dialogRef.close(setVar())" 
+        [disabled]="buttonDisabled"
+        color="primary">Verstanden
+    </button>
+</mat-dialog-actions>

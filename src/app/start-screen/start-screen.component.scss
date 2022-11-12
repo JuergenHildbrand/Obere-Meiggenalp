@@ -1,0 +1,170 @@
+.startScreenCont {
+    // display: flex;
+    // flex-wrap: wrap;
+
+    .img1 {
+        // background: url('../../assets/img/sommer.jpg') center center / cover no-repeat;
+        display: block;
+        height: 50vh;
+        width: 100%;
+        min-width: 100vw;
+        cursor: pointer;
+        object-fit: cover;
+    }
+
+    .img2 {
+        // background: url('../../assets/img/winter.jpg') center center / cover no-repeat;
+        display: block;
+        height: 50vh;
+        width: 100%;
+        min-width: 100vw;
+        cursor: pointer;
+        object-fit: cover;
+    }
+
+    .cont {
+        position: relative;
+
+        h1 {
+            border-top: 1px solid rgba(255, 255, 255, 0.6);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+            background-color: rgba(255, 255, 255, 0.4);
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            left: 0;
+            right: 0;
+            transform: translate(-0%, -50%);
+            font-family: 'Roboto', cursive;
+            font-size: 32px !important;
+            color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .h11 {
+            top: 25%;
+        }
+
+        .h12 {
+            top: 75%;
+        }
+
+    }
+}
+
+.impressum {
+    position: absolute;
+    right: 16px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+.scaleOut {
+    animation: scaleOut 500ms ease-in-out;
+}
+
+
+@keyframes scaleOut {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+// iPhones
+
+@media all and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .startScreenCont {
+        .img1 {
+            height: 406px !important;
+            min-width: 375px !important;
+        }
+
+        .img2 {
+            height: 406px !important;
+            min-width: 375px !important;
+        }
+    }
+}
+
+@media all and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+    .startScreenCont {
+        .img1 {
+            height: 187.5px !important;
+            min-width: 812px !important;
+        }
+
+        .img2 {
+            height: 187.5px !important;
+            min-width: 812px !important;
+        }
+    }
+}
+
+@media all and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .startScreenCont {
+        .img1 {
+            height: 422px !important;
+            min-width: 390px !important;
+        }
+
+        .img2 {
+            height: 422px !important;
+            min-width: 390px !important;
+        }
+    }
+}
+
+@media all and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+    .startScreenCont {
+        .img1 {
+            height: 195px !important;
+            min-width: 844px !important;
+        }
+        .img2 {
+            height: 195px !important;
+            min-width: 844px !important;
+        }
+    }
+}
+
+@media all and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .startScreenCont {
+        .img1 {
+            height: 463px !important;
+            min-width: 428px !important;
+        }
+
+        .img2 {
+            height: 463px !important;
+            min-width: 428px !important;
+        }
+    }
+}
+
+@media all and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+    .startScreenCont {
+        .img1 {
+            height: 214px !important;
+            min-width: 926px !important;
+        }
+
+        .img2 {
+            height: 214px !important;
+            min-width: 926px !important;
+        }
+    }
+}

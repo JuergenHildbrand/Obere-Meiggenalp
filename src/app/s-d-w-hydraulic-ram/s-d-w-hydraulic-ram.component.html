@@ -1,0 +1,70 @@
+<div class="content">
+    <div class="number">5</div>
+    <h2>Widder (Pumpe)</h2>
+    <input class="toggleBtn" id="toggleBtnsRam" type="button" (click)="toggleMap()" value="Karte schliessen">
+    <div class="mapImg" id="sRam" [class.d-none]="comp.mapClose">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1097.246277819687!2d7.7365648793634!3d46.35924368416328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28e31af06eabf944!2zNDbCsDIxJzMzLjQiTiA3wrA0NCcxNC42IkU!5e1!3m2!1sde!2sch!4v1662992701881!5m2!1sde!2sch"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="link">
+            Widder in
+            <a href="https://www.google.com/maps/dir//46.3592788,7.7373794/@46.3592437,7.7365649,252m/data=!3m1!1e3"
+                target="_blank">
+                Google Maps,
+            </a>
+            <a href="https://www.google.com/maps/d/viewer?hl=de&mid=1nqK_f4oPaGtvyCNtQwo5UmBU-ICLWpk&ll=46.361567760591186%2C7.735987349999993&z=17"
+                target="_blank">
+                My-Maps,
+            </a>
+            oder
+            <a href="https://earth.google.com/web/@46.3612898,7.73570856,2243.97080254a,1408.90331472d,30y,-0h,0t,0r/data=MigKJgokCiAxbnFLX2Y0b1BhR3R2eUNOdFF3bzVVbUJVLUlDTFdwayAC"
+                target="_blank">
+                Google Earth
+            </a>
+            öffnen
+        </div>
+    </div>
+
+    <mat-progress-bar class="example-margin" [value]="45.6"></mat-progress-bar>
+
+    <div class="btn" mat-raised-button (click)="comp.scrollDown()" [class.d-none]="comp.windowSmall">
+        <mat-icon>arrow_circle_down</mat-icon>
+    </div>
+
+    <div class="description">
+        <ul>
+            <li>In diesem Schacht befindet der Widder</li>
+            <li>Schachtdeckel öffnen</li>
+        </ul>
+        <img class="situationImgs" src="assets/img/hydraulicRam1.jpg">
+        <ul>
+            <li>Den grüne Hahn schliessen</li>
+            <li>Die beiden Kugelhähne ganz öffnen</li>
+            <li>Den Widder in Gang setzen</li>
+        </ul>
+        <img class="situationImgs" src="assets/img/hydraulicRam2.jpg">
+        <ul>
+            <li>Schachtdeckel schliessen</li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="buttons">
+    <div class="container1">
+        <div class="center">
+            <button class="bfBtn" mat-raised-button color="primary"
+                [routerLink]="'/sommerDrinkingWaterSpring'">zurück</button>
+            <p>Trinkwasserquelle</p>
+        </div>
+        <div class="center">
+            <button class="bfBtn" mat-raised-button color="primary"
+                [routerLink]="'/sommerExtinguishingWaterSystem'">weiter</button>
+            <p>Löschposten</p>
+        </div>
+    </div>
+    <hr>
+    <button class="cancelBtn" (click)="setVar()" mat-stroked-button color="primary"
+        [routerLink]="'/startScreen'">Abbrechen</button>
+</div>

@@ -1,0 +1,30 @@
+<mat-dialog-content (scroll)="onScroll($event)">
+    <h1>Ein-Wintern</h1>
+    <hr>
+    <h2 class="importent">Zwingend einzuhalten:</h2>
+    <ul>
+        <li>Absperrventile ganz aufdrehen (Gegenuhrzeigersinn), dann 1/4 Umdrehung zurückdrehen</li>
+        <li>Kugelhäne 1/2 schliessen (siehe Bild)</li>
+        <li>Dies gilt für jedes Ventil und jeden Hahn bei allen Posten!</li>
+    </ul>
+    <img class="instruction" src="assets/img/instruction1.jpg">
+    <h2>Vorgehen:</h2>
+    <p>
+        Klicke unter der Map auf den Link um auf Google Maps umgeleitet zu werden. Hier kannst du dich zu den
+        jeweiligen Koordinaten navigieren lassen. Sobald du angelangt bist, wechsle zurück zu dieser App und führe
+        die jeweiligen Arbeiten aus.
+        <br><br>
+        Auf My Maps oder Google Earth findest du eine Gesamtübersicht.
+    </p>
+</mat-dialog-content>
+
+<img class="arrow" id="arrow" src="assets/icon/arrowDown.png">
+
+<mat-dialog-actions class="okBtn" align="end">
+    <button 
+        mat-raised-button 
+        (click)="dialogRef.close(setVar())" 
+        [disabled]="buttonDisabled"
+        color="primary">Verstanden
+    </button>
+</mat-dialog-actions>

@@ -1,0 +1,70 @@
+<div class="content">
+    <div class="number">10</div>
+    <h2>Abzweigung Reservoir - Brunnen</h2>
+    <input class="toggleBtn" id="toggleBtn" type="button" (click)="toggleMap()" value="Karte schliessen">
+    <div class="mapImg" id="wDiversionRF" [class.d-none]="comp.mapClose">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d868.3700519517306!2d7.736441250358329!3d46.36000070094546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x657844398874210b!2zNDbCsDIxJzM3LjAiTiA3wrA0NCcxMy43IkU!5e1!3m2!1sde!2sch!4v1662990807534!5m2!1sde!2sch"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="link">
+            Abzweigung Reservoir - Brunnen in
+            <a href="https://www.google.com/maps/place/46%C2%B021'37.0%22N+7%C2%B044'13.7%22E/@46.3599091,7.7366954,304m/data=!3m1!1e3!4m16!1m9!4m8!1m3!2m2!1d7.7369984!2d46.3607939!1m3!2m2!1d7.7369948!2d46.3607399!3m5!1s0x0:0x657844398874210b!7e2!8m2!3d46.3602755!4d7.7371357"
+                target="_blank">
+                Google Maps,
+            </a>
+            <a href="https://www.google.com/maps/d/viewer?hl=de&mid=1nqK_f4oPaGtvyCNtQwo5UmBU-ICLWpk&ll=46.361567760591186%2C7.735987349999993&z=17"
+                target="_blank">
+                My-Maps,
+            </a>
+            oder
+            <a href="https://earth.google.com/web/@46.3612898,7.73570856,2243.97080254a,1408.90331472d,30y,-0h,0t,0r/data=MigKJgokCiAxbnFLX2Y0b1BhR3R2eUNOdFF3bzVVbUJVLUlDTFdwayAC"
+                target="_blank">
+                Google Earth
+            </a>
+            öffnen
+        </div>
+    </div>
+
+    <mat-progress-bar class="example-margin" [value]="90.9"></mat-progress-bar>
+
+    <div class="btn" mat-raised-button (click)="comp.scrollDown()" [class.d-none]="comp.windowSmall">
+        <mat-icon>arrow_circle_down</mat-icon>
+    </div>
+
+    <div class="description">
+        <ul>
+            <li>Schachtdeckel öffnen</li>
+        </ul>
+        <img class="situationImgs" src="assets/img/sDWDiversionReservoirFountain1.jpg">
+        <ul>
+            <li>Das Absperrventil ganz öffen, 1/4 Umdrehung zurückdrehen</li>
+            <li>Der Kugelhahn 1/2 öffnen</li>
+            <li>Schachtdeckel schliessen</li>
+        </ul>
+        <img class="situationImgs" src="assets/img/sDWDiversionReservoirFountain5.jpg">
+        <ul>
+            <li>Beim Brunnen der Hahn 1/2 schliessen</li>
+        </ul>
+        <img class="situationImgs" src="assets/img/sDWDiversionReservoirFountain4.jpg">
+    </div>
+
+</div>
+
+<div class="buttons">
+    <div class="container1">
+        <div class="center">
+            <button class="bfBtn" mat-raised-button color="primary"
+                [routerLink]="'/winterBallValveExtinguishingWaterSystem'">zurück</button>
+            <p>Kugelhahn<br>zum Löschposten</p>
+        </div>
+        <div class="center">
+            <button class="bfBtn" mat-raised-button color="primary"
+                [routerLink]="'/winterDrinkingWaterDistributorMeiggeDown'">weiter</button>
+            <p>Trinkwasserverteilung<br>Obri Meiggu</p>
+        </div>
+    </div>
+    <hr>
+    <button class="cancelBtn" (click)="setVar()" mat-stroked-button color="primary"
+        [routerLink]="'/startScreen'">Abbrechen</button>
+</div>

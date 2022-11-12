@@ -1,0 +1,63 @@
+<div class="content">
+    <div class="number">8</div>
+    <h2>Löschposten</h2>
+    <input class="toggleBtn" id="toggleBtn" type="button" (click)="toggleMap()" value="Karte schliessen">
+    <div class="mapImg" id="waExtinguishing" [class.d-none]="comp.mapClose">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1459.5459727796872!2d7.7362081957889615!3d46.3602994860793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f7e482846e86288!2zNDbCsDIxJzM3LjciTiA3wrA0NCcxMS4xIkU!5e1!3m2!1sde!2sch!4v1662992883796!5m2!1sde!2sch"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="link">
+            Löschposten in
+            <a href="https://www.google.com/maps/place/46%C2%B021'37.7%22N+7%C2%B044'11.1%22E/@46.3602995,7.7362082,335m/data=!3m1!1e3!4m16!1m9!4m8!1m3!2m2!1d7.7364226!2d46.3605238!1m3!2m2!1d7.7364248!2d46.3604645!3m5!1s0x0:0x5f7e482846e86288!7e2!8m2!3d46.3604646!4d7.7364249"
+                target="_blank">
+                Google Maps,
+            </a>
+            <a href="https://www.google.com/maps/d/viewer?hl=de&mid=1nqK_f4oPaGtvyCNtQwo5UmBU-ICLWpk&ll=46.361567760591186%2C7.735987349999993&z=17"
+                target="_blank">
+                My-Maps,
+            </a>
+            oder
+            <a href="https://earth.google.com/web/@46.3612898,7.73570856,2243.97080254a,1408.90331472d,30y,-0h,0t,0r/data=MigKJgokCiAxbnFLX2Y0b1BhR3R2eUNOdFF3bzVVbUJVLUlDTFdwayAC"
+                target="_blank">
+                Google Earth
+            </a>
+            öffnen
+        </div>
+    </div>
+
+    <mat-progress-bar class="example-margin" [value]="72.7"></mat-progress-bar>
+
+    <div class="btn" mat-raised-button (click)="comp.scrollDown()" [class.d-none]="comp.windowSmall">
+        <mat-icon>arrow_circle_down</mat-icon>
+    </div>
+
+    <div class="description">
+        <ul>
+            <li>Sobald kein Wasser mehr fliesst, beide Hähne 1/2 schliessen</li>
+        </ul>
+        <img class="situationImgs" src="assets/img/extinguishingWaterSystem3.jpg">
+        <ul>
+            <li>Schachtdeckel schliessen</li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="buttons">
+    <div class="container1">
+        <div class="center">
+            <button class="bfBtn" mat-raised-button color="primary"
+                [routerLink]="'/winterSeeWaterDrainage'">zurück</button>
+            <p>Kugelhahn<br>zum Löschposten</p>
+        </div>
+        <div class="center">
+            <button class="bfBtn" mat-raised-button color="primary"
+                [routerLink]="'/winterBallValveExtinguishingWaterSystem'">weiter</button>
+            <p>Kugelhan zu<br>Löschposten</p>
+        </div>
+    </div>
+    <hr>
+    <button class="cancelBtn" (click)="setVar()" mat-stroked-button color="primary"
+        [routerLink]="'/startScreen'">Abbrechen</button>
+</div>

@@ -1,0 +1,59 @@
+.mat-dialog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    max-height: 580px;
+
+    h1 {
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+
+    h2 {
+        margin-top: 24px;
+        text-align: center;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        padding-top: 8px;
+        padding-left: 16px;
+        font-size: large;
+
+        li {
+            margin-bottom: 8px;
+        }
+    }
+
+    p {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .instruction {
+        margin-top: 8px;
+        width: 100%;
+        border-radius: 4px;
+    }
+}
+
+.arrow {
+    height: 16px;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+.okBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+}
